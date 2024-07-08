@@ -15,7 +15,6 @@ class MnistDataset(Dataset):
 		image = Image.open(path)
 		# convert to tensor
 		input = torch.tensor(np.array(image)).float()
-
 		label = self.target[index]
 		return input, label
 	
